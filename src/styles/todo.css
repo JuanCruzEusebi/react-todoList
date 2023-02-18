@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.edit-button {
+    padding: 10px;
+    background-color: #353131;
+    color: #F1F7ED;
+    border: none;
+    border-left: 7px solid #232020;
+    font-size: 1.3rem;    
+    letter-spacing: 0.2em;
+}
+
+.delete-button {
+    padding: 10px;
+    background-color: #353131;
+    color: #F1F7ED;
+    border: none;
+    border-left: 7px solid #232020;
+    font-size: 1.3rem;    
+    letter-spacing: 0.2em;
+}
+
+.edit-buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F1F7ED;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.3rem;
+    padding: 0.5em;
+}
+
+.update-input{
+    background-color: #353131;
+    color: whitesmoke;
+    border: none;
+    padding: 10px 15px;
+    width: auto;
+    font-size: 1.3rem;
+}
+
+.update-input:focus {
+    outline: none;
+    color: #F1F7ED;
+  }

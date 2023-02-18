@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Todo from "./Todo";
+import '../styles/todoApp.css'
 
 export default function TodoApp() {
 
@@ -17,7 +18,7 @@ export default function TodoApp() {
         e.preventDefault();
 
         const newTodo = {
-            id: 1,
+            id: Date.now(),
             title: title,
             completed: false
         }
@@ -43,10 +44,11 @@ export default function TodoApp() {
     }
 
     return (
-        <div className="w-full">
+        <div className="function-container">
+            <h1 className="todo-heading">Todo List</h1>
             <form className="todoCreateForm" onSubmit={handleSubmit}>
-                <input onChange={handleChange} className='w-96' value={title} />
-                <input onClick={handleSubmit} type='submit'  value="Create todo" className='hover:bg-sky-700' ></input>
+                <input onChange={handleChange} className='todo-input' value={title} />
+                <input onClick={handleSubmit} type='submit'  value="Create todo" className='todo-button' ></input>
             </form>
 
             <div className="todosContainer">

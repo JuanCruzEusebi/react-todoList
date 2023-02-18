@@ -1,10 +1,11 @@
 import TodoApp from './components/TodoApp';
 import React from 'react';
+import './styles/app.css'
 
 function App() {
   return (
-    <div className="w-full">
-          <TodoApp  />
+    <div className="app-container">          
+          <TodoApp className='app-module'  />
     </div>
 
   )
