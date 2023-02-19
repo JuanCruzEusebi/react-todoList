@@ -6,8 +6,9 @@
 
 .app-container {
     display: flex;
-    justify-content: center;
     background-color: #232020;
     height: 100vh;
+    margin: auto;
+
 }
 

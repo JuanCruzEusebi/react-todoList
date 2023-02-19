@@ -14,6 +14,17 @@
     letter-spacing: 0.2em;
 }
 
+.edit-button:hover {
+    background-color: #b29f9f;
+    cursor: pointer;
+    color: #232020;
+}
+
+.update:hover {
+    background-color: #3d7b3ab6;
+    color: #232020;
+}
+
 .delete-button {
     padding: 10px;
     background-color: #353131;
@@ -22,6 +33,11 @@
     border-left: 7px solid #232020;
     font-size: 1.3rem;    
     letter-spacing: 0.2em;
+}
+
+.delete-button:hover {
+    background-color: #652b2b;
+    cursor: pointer;
 }
 
 .edit-buttons-container {
@@ -46,9 +62,35 @@
     padding: 10px 15px;
     width: auto;
     font-size: 1.3rem;
+    margin-top: 1rem;
 }
 
 .update-input:focus {
     outline: none;
     color: #F1F7ED;
+  }
+
+  .edit-buttons-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: all 2s;
+    opacity: 1;
+  }
+
+  .move {
+    transform: translateX(-1000px);
+    transition: ease-in-out 0.7s;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .title-container {
+    font-size: 1.7rem;
+
+    }
   }

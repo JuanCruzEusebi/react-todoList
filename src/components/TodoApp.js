@@ -45,11 +45,13 @@ export default function TodoApp() {
 
     return (
         <div className="function-container">
+            <div className="heading-container">
             <h1 className="todo-heading">Todo List</h1>
             <form className="todoCreateForm" onSubmit={handleSubmit}>
                 <input onChange={handleChange} className='todo-input' value={title} />
                 <input onClick={handleSubmit} type='submit'  value="Create todo" className='todo-button' ></input>
             </form>
+            </div>
 
             <div className="todosContainer">
                 {
